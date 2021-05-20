@@ -34,12 +34,12 @@ public class Employees {
 
 			public void Display() {
 				
-				System.out.println("\nId: "+Empid);
-				System.out.println("Name: "+Name);
-				System.out.println("Salary: "+Salary);
-				System.out.println("Address: "+Address);
-				System.out.println("Department: "+Department);
-				System.out.println("Subject: "+Subject);
+				System.out.println("\Enter the id of employee: "+Empid);
+				System.out.println("Name of the employee: "+Name);
+				System.out.println("Salary of the employee: "+Salary);
+				System.out.println("Address is : "+Address);
+				System.out.println("Department is: "+Department);
+				System.out.println("Subject : "+Subject);
 				
 			}
 			
@@ -54,7 +54,7 @@ public class Employees {
 			String nam,adr,dep,sub;
 			
 
-			System.out.println("Enter the number of records to be stored:");
+			System.out.println("Enter the number of employees :");
 			count = sc.nextInt();
 	        
 			Teacher[] e = new Teacher[count];
@@ -63,9 +63,9 @@ public class Employees {
 			for( i=0; i<count; i++)
 				{
 				
-				   System.out.println("Enter the ID:");
+				   System.out.println("Enter the ID of the employee:");
 				    id_= sc.nextInt();
-				   System.out.println("Enter the name:");
+				   System.out.println("Enter the name of employee:");
 				    nam= sc.next();
 				   System.out.println("Enter the salary:");
 				    sal= sc.nextFloat();
@@ -79,7 +79,7 @@ public class Employees {
 				   e[i] = new Teacher(id_,nam,sal,adr,dep,sub);
 				
 				}
-			System.out.println("\nEMPLOYEE DETAILS");
+			System.out.println("\ndetails of the employee");
 			for( i=0; i<count; i++)
 		        {
 				   e[i].Display();
